@@ -15,7 +15,11 @@ WordCounter.prototype.bindEvents = function(){
 
 WordCounter.prototype.numberOfWords = function(text){
   var words = text.split(" ");
-  return words.filter(element => element.length).length;
+  // console.log(words);
+  words = words.filter(element => element.length>0);
+  // console.log(words);
+  return words.length;
 }
+
 
 module.exports = WordCounter
