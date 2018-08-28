@@ -14,7 +14,7 @@ ResultView.prototype.bindEvents = function(){
 
 ResultView.prototype.updateView = function(result){
   const resultElement = document.querySelector('#result');
-  resultElement.textContent = `There is ${result} words.`
+  resultElement.textContent = `The number of words in your text is ${result} .`
 };
 
 module.exports = ResultView;
